@@ -1,2 +1,2 @@
-let locationName = 'trojmiasto';
+let locationName = 'krakow';
 let programmingLanquage = 'javascript';

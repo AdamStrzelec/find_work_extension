@@ -1,9 +1,46 @@
-<html>
-    <body>
-        <h1>Hello</h1>
-        <button id='search'>Szukaj</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select name="locations" id="location-select">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="wroclaw">Wrocław</option>
+            <option value="gdansk">Gdańsk</option>
+            <option value="poznan">Poznań</option>
+            <option value="katowice">Katowice</option>
+        </select>
+        <select name="lanquages" id="lanquage-select">
+            <option value="javascript">Javascript</option>
+            <option value="java">Java</option>
+            <option value="c%23">C#</option>
+            <option value="c%2b%2b">C++</option>
+            <option value="django">Python</option>
+            <option value="php">PHP</option>
+        </select>
+        <button type="submit" id='search'>Szukaj</button>
+    </form>
+    <div class="select-page-container">
+        <button class="page-item" id="pracujpl-btn">
+            <img src='../assets/pracuj.jpg'>
+            <span class="works-count">0</span>
+        </button>
+        <button class="page-item" id="nofluffjobs-btn">
+            <img src='../assets/nfj.jpeg'>
+            <span class="works-count">0</span>
+        </button>
+    </div>
+    <div id="offers-container">
+    </div>
 
-        <script src='./searchData.js'></script>
-        <script src='./searchOffers.js'></script>
-    </body>
+    <script src='./searchData.js'></script>
+    <script src='./searchOffers.js'></script>
+</body>
 </html>
+
